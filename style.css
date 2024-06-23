@@ -1,12 +1,86 @@
+/*.roboto-thin {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.roboto-light {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.roboto-medium {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.roboto-bold {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.roboto-black {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.roboto-thin-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.roboto-light-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.roboto-regular-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.roboto-medium-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.roboto-bold-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.roboto-black-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+*/
+
 *{
     margin:0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
   }
   
   :root {
     --main-color: #FF8984;
-    --dusty-purple: #88839E;
+    --dusty-purple_light: #88839E;
     --white: #FFFFFF;
     --dark-blue: #4A4F56;
     --dark-blue-gray: #3B3F45;
@@ -14,7 +88,8 @@
     --dusty-purple: #7A7593;
     
   }
-  
+
+ 
   body{
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
@@ -22,15 +97,16 @@
     justify-content: center;
     flex-direction: column;
     background-color: var(--dark-blue-gray);
-    width: 100%;
-   
+    
   }
   
   main{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    width: 793px;
+    height: 507px;
+    width: 100%;
     
   }
    
@@ -80,6 +156,10 @@
   .tc-main{
     color:var(--main-color);
   }
+
+  .mb-20{
+    margin-bottom: 20px;
+  }
   
   .header-div{
     text-align: center;
@@ -90,17 +170,21 @@
  
   .list li{
     list-style: none;
-    padding: 5px;
-    max-width: 534px;
-    max-height: 45px;
-    background-color: var(--dusty-purple);
+    padding-top: 13px;
+    padding-top: 13px;
+    padding-left: 12px;
+    width: 534px;
+    height: 45px;
+    color:var(--white)
+    
   }
 
   .end_div {
     width: 100%;
     padding: 5px;
-    max-width: 534px;
-    max-height: 45px;
+    width: 534px;
+    padding-top: 12px;
+    padding-bottom: 12px;
     color: var(--main-color);
     background-color: var(--dark-blue);
     text-align: center;
@@ -109,3 +193,44 @@
     
   }
   
+  .list input[type="checkbox"] {
+    width: 19px;
+    height: 19px;
+    margin-right: 13px;
+  }
+
+  .list li label{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+  .list li span{
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 12.89px;
+    
+  }
+
+
+  .list li {
+    background-color: var(--dusty-purple); 
+  }
+  
+  .list li:nth-child(3n+1) {
+    background-color: var(--dusty-purple_light); 
+  }
+  
+  .list li:nth-child(even) {
+    background-color: var(--muted-purple); 
+  }
+
+  .list li:nth-child(4) {
+    border-top: 3px solid white;
+    border-bottom: 3px solid white;
+   }
+
+   .list input[type="checkbox"]:checked ~ label {
+    text-decoration: line-through; 
+    opacity: 0.25;
+  }
