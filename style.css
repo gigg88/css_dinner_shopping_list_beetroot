@@ -171,7 +171,7 @@
   .list li{
     list-style: none;
     padding-top: 13px;
-    padding-top: 13px;
+    padding-bottom: 13px;
     padding-left: 12px;
     width: 534px;
     height: 45px;
@@ -203,12 +203,14 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
+    cursor: pointer;
   }
 
   .list li span{
     font-weight: 400;
     font-size: 11px;
     line-height: 12.89px;
+  
     
   }
 
@@ -228,9 +230,16 @@
   .list li:nth-child(4) {
     border-top: 3px solid white;
     border-bottom: 3px solid white;
+    
    }
 
    .list input[type="checkbox"]:checked ~ label {
     text-decoration: line-through; 
     opacity: 0.25;
   }
+
+  input[type="checkbox"] {
+    accent-color: white;
+  }
+
+
